@@ -11,9 +11,13 @@ number (including but not limited to `int` and `float`).
 * $ source entorno_virtual/bin/activate
 
 * $ pip install mypy
+* $ pip install flake8
 
 ## run code
 * $ mypy challenge.py
 
-* $ python3 challenge.py
+* $ python3 hint_function.py
 * $ python3 test_function.py
+
+* $ flake8 hint_function.py
+* $ flake8 test_function.py 

@@ -1,5 +1,7 @@
 import unittest
+
 from hint_function import count_integer_digits
+
 
 class TestNumber(unittest.TestCase):
     """class for tests"""
@@ -33,6 +35,7 @@ class TestNumber(unittest.TestCase):
         '''test6'''
         self.assertRaises(TypeError, count_integer_digits, "hello world")
 
-if __name__ == '__main__':
-    unittest.main()
 
+if __name__ == '__main__':
+
+    unittest.main()
