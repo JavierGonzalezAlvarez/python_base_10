@@ -1,8 +1,8 @@
 import unittest
-from challenge import count_integer_digits
+from hint_function import count_integer_digits
 
 class TestNumber(unittest.TestCase):
-    '''class for tests'''
+    """class for tests"""
 
     def test_number1(self):
         '''test2'''
@@ -31,8 +31,7 @@ class TestNumber(unittest.TestCase):
 
     def test_number6(self):
         '''test6'''
-        result: int | float = count_integer_digits("hello world")
-        self.assertFalse(isinstance(result, (int, float)), "Should be integer or float type")
+        self.assertRaises(TypeError, count_integer_digits, "hello world")
 
 if __name__ == '__main__':
     unittest.main()
