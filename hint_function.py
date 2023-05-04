@@ -5,8 +5,6 @@ def count_integer_digits(number: int | float | str):
 to write the integer part of that number"""
     if number == 0:
         return 1
-    #if isinstance(number, (int, float)):
-        
     if not isinstance(number, (int, float)):
         raise TypeError("Input must be a number or float")
     return int(math.log10(abs(number))) + 1
